@@ -10,7 +10,7 @@ def sort_list(lst):
         lst.append(min_num)
         return lst
     else:
-        return None
+        return lst
 
 print(sort_list([]))
 print(sort_list([2, 4, 6, 8]))

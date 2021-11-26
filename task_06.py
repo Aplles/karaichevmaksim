@@ -20,9 +20,9 @@ def rps_game_winner(array):
             elif keys[0] == 'R' and keys[1] == 'S':
                 print(*array[0])
             else:
-                return print('NoSuchStrategyError')
+                raise Exception("NoSuchStrategyError")
     else:
-        return print('WrongNumberOfPlayersError')
+        raise Exception("WrongNumberOfPlayersError")
 
 
 rps_game_winner([['player1', 'R'], ['player2', 'S']])
